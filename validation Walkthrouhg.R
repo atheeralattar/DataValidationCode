@@ -1,0 +1,5 @@
+#install.packages("validate")
+library(validate)
+df<-read.csv('~/Documents/Mustafa Project/Gel_Frac_Production/G076147.csv')
+cf<-check_that(df, df$Disposition>0)
+summary(cf)
